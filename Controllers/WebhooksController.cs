@@ -13,7 +13,7 @@ namespace ModulerCrm.Controllers
     /// ModulerCrm - Priority Sync Controller
     /// </summary>
     [Route("api/[controller]")]
-    [ApiController, AllowAnonymous]
+    [ApiController, Authorize]
     public class WebhooksController : ControllerBase
     {
         private readonly IQamaModulerService _modulerService;

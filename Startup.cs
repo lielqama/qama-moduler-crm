@@ -64,12 +64,12 @@ namespace WebApi
                 c.AddSecurityDefinition("ApiKey", new OpenApiSecurityScheme
                 {
                     Description = @"Send ApiKey in query param",
-                    Name = "Authorization",
+                    Name = "apikey",
                     In = ParameterLocation.Query,
                     Type = SecuritySchemeType.ApiKey,
                     Scheme = "apikey"
                 });
-       var key = new OpenApiSecurityScheme()           
+                 var key = new OpenApiSecurityScheme()           
        {                   
            Reference = new OpenApiReference                 
            {                
@@ -78,7 +78,7 @@ namespace WebApi
            In = ParameterLocation.Query                };  
                 var requirement = new OpenApiSecurityRequirement        
                 {                      
-           { key, new List<string>() }                    };   
+                { key, new List<string>() }};   
                 c.AddSecurityRequirement(requirement);
               
 
