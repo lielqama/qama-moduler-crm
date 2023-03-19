@@ -100,7 +100,7 @@ namespace modulercrm.Services
 
                 _priorityService.SetLogId(logid);
 
-               List<CUSTOMERS> customers = await _priorityService.GetListAsync<CUSTOMERS>("CUSTOMERS", -1,null, $"CUSTNAME, CUSTDES, WTAXNUM,STATEA, PHONE, ADDRESS, ADDRESS2, SPEC2 ");
+               List<CUSTOMERS> customers = await _priorityService.GetListAsync<CUSTOMERS>("CUSTOMERS", -1,null, $"CUSTNAME, CUSTDES, WTAXNUM,STATEA, PHONE, ADDRESS, ADDRESS2, SPEC2, EMAIL ");
 
                 _logger.Debug(logid, "priority model", customers);
 
