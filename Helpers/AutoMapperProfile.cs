@@ -27,8 +27,9 @@ namespace ModulerCrm.Helpers
                 .ForMember(x => x.PHONE, opt => opt.MapFrom(y => y.PHONE))
                 .ForMember(x => x.STATEA, opt => opt.MapFrom(y => y.STATEA))
                 .ForMember(x => x.ADDRESS, opt => opt.MapFrom(y => y.ADDRESS))
-                .ForMember(x => x.SPEC2, opt => opt.MapFrom(y => y.SPEC2))
-                .ForMember(x => x.ADDRESS2, opt => opt.MapFrom(y => y.ADDRESS2));
+                 .ForMember(x => x.SPEC2, opt => opt.MapFrom(y => y.SPEC2))
+                .ForMember(x => x.ADDRESS2, opt => opt.MapFrom(y => y.ADDRESS2))
+                 .ForMember(x => x.EMAIL, opt => opt.MapFrom(y => y.EMAIL));
 
             CreateMap<LOGPART, Product>()
                .ForMember(x => x.PARTNAME, opt => opt.MapFrom(y => y.PARTNAME))

@@ -22,7 +22,12 @@
         /// טלפון נוסף 1
         /// </summary>
         public string SPEC2 { get; set; }
-        
+
+        /// <summary>
+        /// מייל
+        /// </summary>
+        public string EMAIL { get; set; }
+
 
 
     }
